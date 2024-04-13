@@ -1,7 +1,7 @@
 # Imported libraries
 library(tidyverse)
-yearly <- read.csv("data/yearly_deaths_by_clinic.csv")
-monthly <- read.csv('data/monthly_deaths.csv')
+yearly <- read.csv("yearly_deaths_by_clinic.csv")
+monthly <- read.csv('monthly_deaths.csv')
 # Start coding here..
 monthly <- monthly%>%
 mutate(proportion_deaths=births/deaths)
